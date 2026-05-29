@@ -1,7 +1,10 @@
-﻿namespace Colorado.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Colorado.Domain.Entities
 {
     public class TipoTelefone
     {
+        [Key]
         public int CodigoTipoTelefone { get; set; }
         public string DescricaoTipoTelefone { get; set; } = string.Empty;
         public DateTime DataInsercao { get; set; }

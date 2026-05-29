@@ -1,7 +1,10 @@
-﻿namespace Colorado.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Colorado.Domain.Entities
 {
     public class Cliente
     {
+        [Key]
         public int CodigoCliente { get; set; }
         public string RazaoSocial { get; set; } = string.Empty;
         public string NomeFantasia { get; set; } = string.Empty;

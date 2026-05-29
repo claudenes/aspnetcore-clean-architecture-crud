@@ -1,4 +1,5 @@
 C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\bin\Debug\net8.0\Colorado.Infra.Data.deps.json
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\bin\Debug\net8.0\Colorado.Infra.Data.runtimeconfig.json
 C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\bin\Debug\net8.0\Colorado.Infra.Data.dll
 C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\bin\Debug\net8.0\Colorado.Infra.Data.pdb
 C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\bin\Debug\net8.0\Colorado.Application.dll
@@ -15,4 +16,5 @@ C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\obj\
 C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\obj\Debug\net8.0\Colorado.Infra.Data.dll
 C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\obj\Debug\net8.0\refint\Colorado.Infra.Data.dll
 C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\obj\Debug\net8.0\Colorado.Infra.Data.pdb
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\obj\Debug\net8.0\Colorado.Infra.Data.genruntimeconfig.cache
 C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Infra.Data\obj\Debug\net8.0\ref\Colorado.Infra.Data.dll

@@ -1,0 +1,12 @@
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\bin\Debug\net8.0\Colorado.Domain.deps.json
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\bin\Debug\net8.0\Colorado.Domain.dll
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\bin\Debug\net8.0\Colorado.Domain.pdb
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\obj\Debug\net8.0\Colorado.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\obj\Debug\net8.0\Colorado.Domain.AssemblyInfoInputs.cache
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\obj\Debug\net8.0\Colorado.Domain.AssemblyInfo.cs
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\obj\Debug\net8.0\Colorado.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\obj\Debug\net8.0\Colorado.Domain.sourcelink.json
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\obj\Debug\net8.0\Colorado.Domain.dll
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\obj\Debug\net8.0\refint\Colorado.Domain.dll
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\obj\Debug\net8.0\Colorado.Domain.pdb
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Domain\obj\Debug\net8.0\ref\Colorado.Domain.dll

@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="Colorado.API/Colorado.API.csproj" />
+  <Project Path="Colorado.Application/Colorado.Application.csproj" />
+  <Project Path="Colorado.Domain.Tests/Colorado.Domain.Tests.csproj" />
+  <Project Path="Colorado.Domain/Colorado.Domain.csproj" />
+  <Project Path="Colorado.Infra.Data/Colorado.Infra.Data.csproj" />
+  <Project Path="Colorado.Infra.IoC/Colorado.Infra.IoC.csproj" />
+  <Project Path="Colorado.WebUI/Colorado.WebUI.csproj" />
+</Solution>

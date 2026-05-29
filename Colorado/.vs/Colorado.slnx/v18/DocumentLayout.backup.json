@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C77BB0D-E185-498E-9236-D2129EC99686}|Colorado.API\\Colorado.API.csproj|c:\\projetos\\aspnetcore-clean-architecture-crud\\colorado\\colorado.api\\colorado.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0C77BB0D-E185-498E-9236-D2129EC99686}|Colorado.API\\Colorado.API.csproj|solutionrelative:colorado.api\\colorado.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E53EF0-36C1-481A-B472-7FB4557173FF}|Colorado.Infra.IoC\\Colorado.Infra.IoC.csproj|c:\\projetos\\aspnetcore-clean-architecture-crud\\colorado\\colorado.infra.ioc\\colorado.infra.ioc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B9E53EF0-36C1-481A-B472-7FB4557173FF}|Colorado.Infra.IoC\\Colorado.Infra.IoC.csproj|solutionrelative:colorado.infra.ioc\\colorado.infra.ioc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AF50CA5-53D1-4D8F-A5C3-260FA266BC37}|Colorado.Infra.Data\\Colorado.Infra.Data.csproj|c:\\projetos\\aspnetcore-clean-architecture-crud\\colorado\\colorado.infra.data\\colorado.infra.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7AF50CA5-53D1-4D8F-A5C3-260FA266BC37}|Colorado.Infra.Data\\Colorado.Infra.Data.csproj|solutionrelative:colorado.infra.data\\colorado.infra.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BB0DDE3-6DB1-4CD8-8534-AAF42AB1753D}|Colorado.Domain\\Colorado.Domain.csproj|c:\\projetos\\aspnetcore-clean-architecture-crud\\colorado\\colorado.domain\\entities\\tipotelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BB0DDE3-6DB1-4CD8-8534-AAF42AB1753D}|Colorado.Domain\\Colorado.Domain.csproj|solutionrelative:colorado.domain\\entities\\tipotelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BB0DDE3-6DB1-4CD8-8534-AAF42AB1753D}|Colorado.Domain\\Colorado.Domain.csproj|c:\\projetos\\aspnetcore-clean-architecture-crud\\colorado\\colorado.domain\\entities\\telefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BB0DDE3-6DB1-4CD8-8534-AAF42AB1753D}|Colorado.Domain\\Colorado.Domain.csproj|solutionrelative:colorado.domain\\entities\\telefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BB0DDE3-6DB1-4CD8-8534-AAF42AB1753D}|Colorado.Domain\\Colorado.Domain.csproj|c:\\projetos\\aspnetcore-clean-architecture-crud\\colorado\\colorado.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BB0DDE3-6DB1-4CD8-8534-AAF42AB1753D}|Colorado.Domain\\Colorado.Domain.csproj|solutionrelative:colorado.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55803AFE-8D5B-4D1E-AC8D-1DC215C00543}|Colorado.Application\\Colorado.Application.csproj|c:\\projetos\\aspnetcore-clean-architecture-crud\\colorado\\colorado.application\\colorado.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{55803AFE-8D5B-4D1E-AC8D-1DC215C00543}|Colorado.Application\\Colorado.Application.csproj|solutionrelative:colorado.application\\colorado.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BB0DDE3-6DB1-4CD8-8534-AAF42AB1753D}|Colorado.Domain\\Colorado.Domain.csproj|c:\\projetos\\aspnetcore-clean-architecture-crud\\colorado\\colorado.domain\\interfaces\\iresourcerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BB0DDE3-6DB1-4CD8-8534-AAF42AB1753D}|Colorado.Domain\\Colorado.Domain.csproj|solutionrelative:colorado.domain\\interfaces\\iresourcerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Colorado.API",
+              "DocumentMoniker": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.API\\Colorado.API.csproj",
+              "RelativeDocumentMoniker": "Colorado.API\\Colorado.API.csproj",
+              "ToolTip": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.API\\Colorado.API.csproj",
+              "RelativeToolTip": "Colorado.API\\Colorado.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-29T12:57:24.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Colorado.Infra.IoC",
+              "DocumentMoniker": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Infra.IoC\\Colorado.Infra.IoC.csproj",
+              "RelativeDocumentMoniker": "Colorado.Infra.IoC\\Colorado.Infra.IoC.csproj",
+              "ToolTip": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Infra.IoC\\Colorado.Infra.IoC.csproj",
+              "RelativeToolTip": "Colorado.Infra.IoC\\Colorado.Infra.IoC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-29T12:53:51.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Colorado.Infra.Data",
+              "DocumentMoniker": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Infra.Data\\Colorado.Infra.Data.csproj",
+              "RelativeDocumentMoniker": "Colorado.Infra.Data\\Colorado.Infra.Data.csproj",
+              "ToolTip": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Infra.Data\\Colorado.Infra.Data.csproj",
+              "RelativeToolTip": "Colorado.Infra.Data\\Colorado.Infra.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-29T12:46:02.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Colorado.Application",
+              "DocumentMoniker": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Application\\Colorado.Application.csproj",
+              "RelativeDocumentMoniker": "Colorado.Application\\Colorado.Application.csproj",
+              "ToolTip": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Application\\Colorado.Application.csproj",
+              "RelativeToolTip": "Colorado.Application\\Colorado.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-29T12:40:05.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IResourceRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Domain\\Interfaces\\IResourceRepository.cs",
+              "RelativeDocumentMoniker": "Colorado.Domain\\Interfaces\\IResourceRepository.cs",
+              "ToolTip": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Domain\\Interfaces\\IResourceRepository.cs",
+              "RelativeToolTip": "Colorado.Domain\\Interfaces\\IResourceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:39:10.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TipoTelefone.cs",
+              "DocumentMoniker": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Domain\\Entities\\TipoTelefone.cs",
+              "RelativeDocumentMoniker": "Colorado.Domain\\Entities\\TipoTelefone.cs",
+              "ToolTip": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Domain\\Entities\\TipoTelefone.cs",
+              "RelativeToolTip": "Colorado.Domain\\Entities\\TipoTelefone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:27:34.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Telefone.cs",
+              "DocumentMoniker": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Domain\\Entities\\Telefone.cs",
+              "RelativeDocumentMoniker": "Colorado.Domain\\Entities\\Telefone.cs",
+              "ToolTip": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Domain\\Entities\\Telefone.cs",
+              "RelativeToolTip": "Colorado.Domain\\Entities\\Telefone.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:27:00.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Domain\\Entities\\Cliente.cs",
+              "RelativeDocumentMoniker": "Colorado.Domain\\Entities\\Cliente.cs",
+              "ToolTip": "C:\\Projetos\\aspnetcore-clean-architecture-crud\\Colorado\\Colorado.Domain\\Entities\\Cliente.cs",
+              "RelativeToolTip": "Colorado.Domain\\Entities\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:26:16.959Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

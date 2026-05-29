@@ -1,0 +1,16 @@
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\bin\Debug\net8.0\Colorado.Application.deps.json
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\bin\Debug\net8.0\Colorado.Application.dll
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\bin\Debug\net8.0\Colorado.Application.pdb
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\bin\Debug\net8.0\Colorado.Domain.dll
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\bin\Debug\net8.0\Colorado.Domain.pdb
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\Colorado.Application.csproj.AssemblyReference.cache
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\Colorado.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\Colorado.Application.AssemblyInfoInputs.cache
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\Colorado.Application.AssemblyInfo.cs
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\Colorado.Application.csproj.CoreCompileInputs.cache
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\Colorado.Application.sourcelink.json
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\Colorado.0FD4B559.Up2Date
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\Colorado.Application.dll
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\refint\Colorado.Application.dll
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\Colorado.Application.pdb
+C:\Projetos\aspnetcore-clean-architecture-crud\Colorado\Colorado.Application\obj\Debug\net8.0\ref\Colorado.Application.dll

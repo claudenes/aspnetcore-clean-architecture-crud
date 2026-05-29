@@ -9,7 +9,10 @@ namespace Colorado.Infra.Data.Mapping
         public void Configure(EntityTypeBuilder<Telefone> builder)
         {
             builder.ToTable("Telefone");
-            builder.HasKey(x => x.CodigoCliente);
+            builder.HasKey(t => new { t.CodigoCliente, t.NumeroTelefone });
+            builder.HasOne(t => t.TipoTelefone)
+        .WithMany()                          // ou .WithMany(tt => tt.Telefones)
+        .HasForeignKey(t => t.CodigoTipoTelefone);
             builder.Property(x => x.CodigoCliente)
                 .ValueGeneratedOnAdd()
                 .HasColumnName("CodigoCliente")

@@ -8,7 +8,6 @@ namespace Colorado.Infra.Data.Context
     {
         public DbSet<Telefone> Telefones { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
-
         public DbSet<TipoTelefone> TipoTelefones { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)

@@ -61,36 +61,14 @@ namespace Colorado.Infra.Data.Migrations
                     Operadora = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Ativo = table.Column<bool>(type: "bit", nullable: false),
                     DataInsercao = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UsuarioInsercao = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ClienteCodigoCliente = table.Column<int>(type: "int", nullable: false),
-                    TipoTelefoneCodigoTipoTelefone = table.Column<int>(type: "int", nullable: false)
+                    UsuarioInsercao = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                   
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Telefone", x => x.CodigoCliente);
-                    table.ForeignKey(
-                        name: "FK_Telefone_Cliente_ClienteCodigoCliente",
-                        column: x => x.ClienteCodigoCliente,
-                        principalTable: "Cliente",
-                        principalColumn: "CodigoCliente",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Telefone_TipoTelefone_TipoTelefoneCodigoTipoTelefone",
-                        column: x => x.TipoTelefoneCodigoTipoTelefone,
-                        principalTable: "TipoTelefone",
-                        principalColumn: "CodigoTipoTelefone",
-                        onDelete: ReferentialAction.Cascade);
+                    
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Telefone_ClienteCodigoCliente",
-                table: "Telefone",
-                column: "ClienteCodigoCliente");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Telefone_TipoTelefoneCodigoTipoTelefone",
-                table: "Telefone",
-                column: "TipoTelefoneCodigoTipoTelefone");
         }
 
         /// <inheritdoc />

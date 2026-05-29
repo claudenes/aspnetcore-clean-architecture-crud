@@ -9,6 +9,6 @@
         public string UsuarioInsercao { get; set; } = string.Empty;
 
         // Navegação
-        public ICollection<TelefoneDto> Telefones { get; set; } = new List<TelefoneDto>();
+        //public ICollection<TelefoneDto> Telefones { get; set; } = new List<TelefoneDto>();
     }
 }

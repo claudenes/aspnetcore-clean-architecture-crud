@@ -110,8 +110,7 @@ namespace Colorado.Infra.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TipoTelefoneCodigoTipoTelefone")
-                        .HasColumnType("int");
+                   
 
                     b.Property<string>("UsuarioInsercao")
                         .IsRequired()
@@ -119,9 +118,7 @@ namespace Colorado.Infra.Data.Migrations
 
                     b.HasKey("CodigoCliente");
 
-                    b.HasIndex("ClienteCodigoCliente");
-
-                    b.HasIndex("TipoTelefoneCodigoTipoTelefone");
+                   
 
                     b.ToTable("Telefone");
                 });
@@ -152,17 +149,7 @@ namespace Colorado.Infra.Data.Migrations
 
             modelBuilder.Entity("Colorado.Domain.Entities.Telefone", b =>
                 {
-                    b.HasOne("Colorado.Domain.Entities.Cliente", "Cliente")
-                        .WithMany("Telefones")
-                        .HasForeignKey("ClienteCodigoCliente")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Colorado.Domain.Entities.TipoTelefone", "TipoTelefone")
-                        .WithMany("Telefones")
-                        .HasForeignKey("TipoTelefoneCodigoTipoTelefone")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    
 
                     b.Navigation("Cliente");
 

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -14,10 +14,6 @@
     <ProjectReference Include="..\Colorado.Application\Colorado.Application.csproj" />
     <ProjectReference Include="..\Colorado.Domain\Colorado.Domain.csproj" />
     <ProjectReference Include="..\Colorado.Infra.IoC\Colorado.Infra.IoC.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

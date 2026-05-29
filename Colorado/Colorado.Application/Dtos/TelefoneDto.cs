@@ -11,7 +11,6 @@
         public string UsuarioInsercao { get; set; } = string.Empty;
 
         // Navegação
-        public ClienteDto Cliente { get; set; } =null!;
-        public TipoTelefoneDto TipoTelefone { get; set; } = null!;
+        //public TipoTelefoneDto TipoTelefone { get; set; } = null!;
     }
 }

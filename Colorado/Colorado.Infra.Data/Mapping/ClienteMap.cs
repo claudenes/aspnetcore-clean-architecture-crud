@@ -10,6 +10,7 @@ namespace Colorado.Infra.Data.Mapping
         {
             builder.ToTable("Cliente");
             builder.HasKey(x => x.CodigoCliente);
+            builder.HasMany(x => x.Telefones);
             builder.Property(x => x.CodigoCliente)
                 .ValueGeneratedOnAdd()
                 .HasColumnName("CodigoCliente")

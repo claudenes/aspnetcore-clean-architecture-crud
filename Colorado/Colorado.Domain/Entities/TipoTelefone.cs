@@ -11,6 +11,6 @@ namespace Colorado.Domain.Entities
         public string UsuarioInsercao { get; set; } = string.Empty;
 
         // Navegação
-        public ICollection<Telefone> Telefones { get; set; } = new List<Telefone>();
+        //public ICollection<Telefone> Telefones { get; set; } = new List<Telefone>();
     }
 }

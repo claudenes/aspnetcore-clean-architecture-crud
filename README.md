@@ -18,3 +18,6 @@ escolha e que seja gratuito;
 ✓ Utilizar Entity Framework;
 Diferencial:
 ✓ Uso de arquitetura limpa e padrão de repositório;
+
+
+<img width="1344" height="414" alt="image" src="https://github.com/user-attachments/assets/8607c49c-fa63-47f9-82b9-444296ab22fb" />

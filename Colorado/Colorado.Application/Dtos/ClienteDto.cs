@@ -13,10 +13,10 @@
         public string Cidade { get; set; } = string.Empty;
         public string CEP { get; set; } = string.Empty;
         public string UF { get; set; } = string.Empty;
-        public DateTime DataInsercao { get; set; }
+        public DateTime DataInsercao { get; set; } = DateTime.Now;
         public string UsuarioInsercao { get; set; } = string.Empty;
 
         // Navegação
-        public ICollection<TelefoneDto> Telefones { get; set; } = new List<TelefoneDto>();
+        public List<TelefoneDto> Telefones { get; set; } = new List<TelefoneDto>();
     }
 }

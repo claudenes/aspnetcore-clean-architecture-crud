@@ -1,0 +1,190 @@
+﻿@using Colorado.Application.Dtos
+@model ClienteDto
+@{
+    ViewData["Title"] = "Editar Cliente";
+    var tiposJson = ViewBag.TiposTelefoneJson as string ?? "[]";
+}
+
+<div class="d-flex align-items-center mb-4 gap-2">
+    <a asp-action="Index" class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-arrow-left"></i>
+    </a>
+    <h2 class="mb-0"><i class="bi bi-pencil-square text-danger"></i> Editar Cliente #@Model.CodigoCliente</h2>
+</div>
+
+<form id="frmCliente" novalidate>
+    @Html.AntiForgeryToken()
+
+    <div class="row g-3">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-danger text-white fw-bold">
+                    <i class="bi bi-person-badge"></i> Dados Cadastrais
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-2">
+                            <label class="form-label">Tipo Pessoa *</label>
+                            <select id="TipoPessoa" name="TipoPessoa" class="form-select" required>
+                                <option value="F" selected="@(Model.TipoPessoa == "F")">Física</option>
+                                <option value="J" selected="@(Model.TipoPessoa == "J")">Jurídica</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5">
+                            <label class="form-label">Razão Social *</label>
+                            <input type="text" id="RazaoSocial" class="form-control" required maxlength="200" value="@Model.RazaoSocial" />
+                        </div>
+                        <div class="col-md-5">
+                            <label class="form-label">Nome Fantasia</label>
+                            <input type="text" id="NomeFantasia" class="form-control" maxlength="200" value="@Model.NomeFantasia" />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Documento *</label>
+                            <input type="text" id="Documento" class="form-control" required maxlength="18" value="@Model.Documento" />
+                        </div>
+                        <div class="col-md-5">
+                            <label class="form-label">Endereço</label>
+                            <input type="text" id="Endereco" class="form-control" maxlength="300" value="@Model.Endereco" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Complemento</label>
+                            <input type="text" id="Complemento" class="form-control" maxlength="100" value="@Model.Complemento" />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Bairro</label>
+                            <input type="text" id="Bairro" class="form-control" maxlength="100" value="@Model.Bairro" />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Cidade</label>
+                            <input type="text" id="Cidade" class="form-control" maxlength="100" value="@Model.Cidade" />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">CEP</label>
+                            <input type="text" id="CEP" class="form-control" maxlength="9" value="@Model.CEP" />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">UF</label>
+                            <input type="text" id="UF" class="form-control" maxlength="2" style="text-transform:uppercase" value="@Model.UF" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-danger text-white fw-bold d-flex justify-content-between">
+                    <span><i class="bi bi-telephone"></i> Telefones</span>
+                    <button type="button" id="btnAddTelefone" class="btn btn-sm btn-light">
+                        <i class="bi bi-plus"></i> Adicionar
+                    </button>
+                </div>
+                <div class="card-body">
+                    <table class="table table-sm" id="tblTelefones">
+                        <thead>
+                            <tr>
+                                <th>Número *</th><th>Tipo *</th><th>Operadora</th><th>Ativo</th><th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="telefoneRows"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-3 d-flex gap-2">
+        <button type="submit" class="btn btn-danger" id="btnSalvar">
+            <i class="bi bi-check-circle"></i> Salvar Alterações
+        </button>
+        <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+    </div>
+    <div id="alertMsg" class="mt-3" style="display:none"></div>
+</form>
+
+@section Scripts {
+<script>
+    var tiposTelefone = @Html.Raw(tiposJson);
+    var token = $('input[name="__RequestVerificationToken"]').val();
+    var clienteId = @Model.CodigoCliente;
+    var telefonesIniciais = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Telefones));
+
+    function buildTiposOptions(selected) {
+        return tiposTelefone.map(function (t) {
+            var sel = (t.codigoTipoTelefone === selected) ? 'selected' : '';
+            return '<option value="' + t.codigoTipoTelefone + '" ' + sel + '>' + t.descricaoTipoTelefone + '</option>';
+        }).join('');
+    }
+
+    function addRow(tel) {
+        tel = tel || {};
+        var row = '<tr>' +
+            '<td><input type="text" class="form-control form-control-sm tel-numero" required maxlength="20" value="' + (tel.numeroTelefone || '') + '" /></td>' +
+            '<td><select class="form-select form-select-sm tel-tipo">' + buildTiposOptions(tel.codigoTipoTelefone) + '</select></td>' +
+            '<td><input type="text" class="form-control form-control-sm tel-operadora" maxlength="50" value="' + (tel.operadora || '') + '" /></td>' +
+            '<td class="text-center"><input type="checkbox" class="form-check-input tel-ativo" ' + (tel.ativo !== false ? 'checked' : '') + ' /></td>' +
+            '<td><button type="button" class="btn btn-sm btn-outline-danger btn-rm"><i class="bi bi-x"></i></button></td>' +
+            '</tr>';
+        $('#telefoneRows').append(row);
+    }
+
+    telefonesIniciais.forEach(function (t) { addRow(t); });
+    $('#btnAddTelefone').on('click', function () { addRow(); });
+    $(document).on('click', '.btn-rm', function () { $(this).closest('tr').remove(); });
+
+    function collectTelefones() {
+        var list = [];
+        $('#telefoneRows tr').each(function () {
+            list.push({
+                numeroTelefone: $(this).find('.tel-numero').val().trim(),
+                codigoTipoTelefone: parseInt($(this).find('.tel-tipo').val()),
+                operadora: $(this).find('.tel-operadora').val().trim() || null,
+                ativo: $(this).find('.tel-ativo').is(':checked'),
+                usuarioInsercao: 'sistema'
+            });
+        });
+        return list;
+    }
+
+    $('#frmCliente').on('submit', function (e) {
+        e.preventDefault();
+        var payload = {
+            codigoCliente: clienteId,
+            razaoSocial: $('#RazaoSocial').val().trim(),
+            nomeFantasia: $('#NomeFantasia').val().trim(),
+            tipoPessoa: $('#TipoPessoa').val(),
+            documento: $('#Documento').val().trim(),
+            endereco: $('#Endereco').val().trim() || null,
+            complemento: $('#Complemento').val().trim() || null,
+            bairro: $('#Bairro').val().trim() || null,
+            cidade: $('#Cidade').val().trim() || null,
+            cep: $('#CEP').val().trim() || null,
+            uf: $('#UF').val().trim().toUpperCase() || null,
+            usuarioInsercao: 'sistema',
+            telefones: collectTelefones()
+        };
+
+        $('#btnSalvar').prop('disabled', true).html('<span class="spinner-border spinner-border-sm"></span> Salvando...');
+
+        $.ajax({
+            url: '/Clientes/Edit/' + clienteId,
+            type: 'POST',
+            contentType: 'application/json',
+            headers: { 'RequestVerificationToken': token },
+            data: JSON.stringify(payload),
+            success: function () {
+                showAlert('success', 'Cliente atualizado com sucesso!');
+                setTimeout(function () { window.location.href = '/Clientes'; }, 1000);
+            },
+            error: function (xhr) {
+                showAlert('danger', 'Erro: ' + (xhr.responseJSON?.message || xhr.statusText));
+                $('#btnSalvar').prop('disabled', false).html('<i class="bi bi-check-circle"></i> Salvar Alterações');
+            }
+        });
+    });
+
+    function showAlert(type, msg) {
+        $('#alertMsg').removeClass().addClass('alert alert-' + type).html(msg).show();
+    }
+</script>
+}

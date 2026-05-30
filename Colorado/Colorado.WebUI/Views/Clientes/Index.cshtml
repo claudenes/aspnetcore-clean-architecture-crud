@@ -1,0 +1,124 @@
+@using Colorado.Application.Dtos
+@model IEnumerable<ClienteDto>
+@{
+    ViewData["Title"] = "Clientes";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-people-fill text-danger"></i> Clientes</h2>
+    <a asp-action="Create" class="btn btn-danger">
+        <i class="bi bi-plus-circle"></i> Novo Cliente
+    </a>
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body p-0">
+        <table class="table table-hover mb-0" id="tblClientes">
+            <thead class="table-danger">
+                <tr>
+                    <th>#</th>
+                    <th>Razão Social</th>
+                    <th>Nome Fantasia</th>
+                    <th>Tipo</th>
+                    <th>Documento</th>
+                    <th>Cidade/UF</th>
+                    <th>Telefones</th>
+                    <th class="text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model)
+                {
+                    <tr>
+                        <td>@c.CodigoCliente</td>
+                        <td>@c.RazaoSocial</td>
+                        <td>@c.NomeFantasia</td>
+                        <td>
+                            <span class="badge @(c.TipoPessoa == "F" ? "bg-info" : "bg-warning text-dark")">
+                                @(c.TipoPessoa == "F" ? "Física" : "Jurídica")
+                            </span>
+                        </td>
+                        <td>@c.Documento</td>
+                        <td>@c.Cidade@(string.IsNullOrEmpty(c.UF) ? "" : $"/{c.UF}")</td>
+                        <td>
+                            @if (c.Telefones.Any())
+                            {
+                                <span class="badge bg-secondary">@c.Telefones.Count</span>
+                            }
+                        </td>
+                        <td class="text-center">
+                            <a asp-action="Details" asp-route-id="@c.CodigoCliente"
+                               class="btn btn-sm btn-outline-secondary" title="Detalhes">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@c.CodigoCliente"
+                               class="btn btn-sm btn-outline-primary" title="Editar">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <button class="btn btn-sm btn-outline-danger btn-delete"
+                                    data-id="@c.CodigoCliente"
+                                    data-nome="@c.RazaoSocial" title="Excluir">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal confirmação exclusão -->
+<div class="modal fade" id="modalDelete" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title"><i class="bi bi-exclamation-triangle"></i> Confirmar Exclusão</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                Deseja realmente excluir o cliente <strong id="nomeClienteDelete"></strong>?
+                <br><small class="text-muted">Todos os telefones vinculados também serão removidos.</small>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" id="btnConfirmDelete">
+                    <i class="bi bi-trash"></i> Excluir
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var deleteId = 0;
+        var modal = new bootstrap.Modal(document.getElementById('modalDelete'));
+
+        $(document).on('click', '.btn-delete', function () {
+            deleteId = $(this).data('id');
+            $('#nomeClienteDelete').text($(this).data('nome'));
+            modal.show();
+        });
+
+        $('#btnConfirmDelete').on('click', function () {
+            $.ajax({
+                url: '/Clientes/DeleteConfirmed',
+                type: 'POST',
+                contentType: 'application/x-www-form-urlencoded',
+                data: {
+                    id: deleteId,
+                    __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                },
+                success: function () {
+                    modal.hide();
+                    location.reload();
+                },
+                error: function () {
+                    alert('Erro ao excluir cliente.');
+                }
+            });
+        });
+    </script>
+    @Html.AntiForgeryToken()
+}

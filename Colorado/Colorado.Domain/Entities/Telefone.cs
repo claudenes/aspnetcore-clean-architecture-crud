@@ -12,7 +12,7 @@ namespace Colorado.Domain.Entities
         public int CodigoTipoTelefone { get; set; }
         public string Operadora { get; set; } = string.Empty;
         public bool Ativo { get; set; }
-        public DateTime DataInsercao { get; set; }
+        public DateTime DataInsercao { get; set; } = DateTime.Now;
         public string UsuarioInsercao { get; set; } = string.Empty;
 
         // Navegação: telefone pertence a um cliente

@@ -10,6 +10,7 @@ namespace Colorado.Infra.Data.Mapping
         {
             builder.ToTable("Telefone");
             builder.HasKey(t => new { t.CodigoCliente, t.NumeroTelefone });
+            builder.HasOne(t => t.Cliente);
             builder.HasOne(t => t.TipoTelefone)
         .WithMany()                          // ou .WithMany(tt => tt.Telefones)
         .HasForeignKey(t => t.CodigoTipoTelefone);

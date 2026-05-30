@@ -16,10 +16,10 @@ namespace Colorado.Domain.Entities
         public string Cidade { get; set; } = string.Empty;
         public string CEP { get; set; } = string.Empty;
         public string UF { get; set; } = string.Empty;
-        public DateTime DataInsercao { get; set; }
+        public DateTime DataInsercao { get; set; } = DateTime.Now;
         public string UsuarioInsercao { get; set; } = string.Empty;
 
         // Navegação
-        public ICollection<Telefone> Telefones { get; set; } = new List<Telefone>();
+        public List<Telefone> Telefones { get; set; } = new List<Telefone>();
     }
 }

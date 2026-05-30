@@ -7,7 +7,7 @@ namespace Colorado.Domain.Entities
         [Key]
         public int CodigoTipoTelefone { get; set; }
         public string DescricaoTipoTelefone { get; set; } = string.Empty;
-        public DateTime DataInsercao { get; set; }
+        public DateTime DataInsercao { get; set; } = DateTime.Now;
         public string UsuarioInsercao { get; set; } = string.Empty;
 
         // Navegação

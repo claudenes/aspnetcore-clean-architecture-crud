@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Colorado.Application\Colorado.Application.csproj" />
+    <ProjectReference Include="..\Colorado.Infra.IoC\Colorado.Infra.IoC.csproj" />
+  </ItemGroup>
+
 </Project>
